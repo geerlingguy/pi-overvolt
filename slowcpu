@@ -1,0 +1,1 @@
+echo 2800000 | tee /sys/devices/system/cpu/cpu*/cpufreq/scaling_max_freq
