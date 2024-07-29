@@ -7,6 +7,10 @@
 
 ## History
 
+<p align="center"><a href="TODO"><img src="images/pi-overvolt.jpg?raw=true" width="500" height="auto" alt="YouTube - Video demonstrating Pi overclock with this overvolt hack" /></a></p>
+
+Click the image above to view a video about this project, or read [Jeff Geerling's blog post](TODO).
+
 This project was initially conceived by [@jonatron](https://github.com/jonatron), and the first tests were written up in this blog post: [Beating Jeff's 3.14 GHz Raspberry Pi 5](https://jonatron.github.io/randomstuff/pivolt/).
 
 The Raspberry Pi 5's bootloader / firmware contains a hard-coded 1.000V limit, and because the firmware is signed by Broadcom/Raspberry Pi, you can't patch the bootloader itself. But you _can_ patch the system memory once booted, and that's exactly what the code in this project does.
@@ -66,7 +70,7 @@ When you're ready to run a benchmark, remove the voltage limit, flush the GPU's 
 
 ```
 cd pi-overvolt && sudo ./removelimit && vcgencmd cache_flush
-echo 3500000 | sudo tee /sys/devices/system/cpu/cpu*/cpufreq/scaling_max_freq
+echo 3300000 | sudo tee /sys/devices/system/cpu/cpu*/cpufreq/scaling_max_freq
 echo performance | sudo tee /sys/devices/system/cpu/cpu*/cpufreq/scaling_governor
 ```
 
@@ -88,3 +92,7 @@ While running these tests, I run `watch -n 1 ./stats.sh` using the file included
 | 2024-07-25 | geerlingguy | 1121 | 2219 | `over_voltage_delta=70000`, `arm_freq=3400`, `gpu_freq=1100` | [result](https://browser.geekbench.com/v6/cpu/7058700) |
 
 Sorted list of Pi 5 Geekbench 6 results: [Single core](https://browser.geekbench.com/v6/cpu/search?dir=desc&q=Raspberry+Pi+5+Model+B&sort=score) | [Multi core](https://browser.geekbench.com/v6/cpu/search?dir=desc&q=Raspberry+Pi+5+Model+B&sort=multicore_score)
+
+## License
+
+MIT
