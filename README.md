@@ -7,9 +7,9 @@
 
 ## History
 
-<p align="center"><a href="TODO"><img src="images/pi-overvolt.jpg?raw=true" width="500" height="auto" alt="YouTube - Video demonstrating Pi overclock with this overvolt hack" /></a></p>
+<p align="center"><a href="https://www.youtube.com/watch?v=OXXKi-J0gs4"><img src="images/pi-overvolt.jpg?raw=true" width="500" height="auto" alt="YouTube - Video demonstrating Pi overclock with this overvolt hack" /></a></p>
 
-Click the image above to view a video about this project, or read [Jeff Geerling's blog post](TODO).
+Click the image above to watch a video about this project, or read [this blog post](https://www.jeffgeerling.com/blog/2024/fastest-overclock-on-raspberry-pi) for more details.
 
 This project was initially conceived by [@jonatron](https://github.com/jonatron), and the first tests were written up in this blog post: [Beating Jeff's 3.14 GHz Raspberry Pi 5](https://jonatron.github.io/randomstuff/pivolt/).
 
