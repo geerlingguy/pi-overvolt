@@ -89,6 +89,7 @@ While running these tests, I run `watch -n 1 ./stats.sh` using the file included
 
 | Date | User | Single Core | Multicore | Settings | Link |
 | --- | --- | --- | --- | --- | --- |
+| 2024-12-02 | geerlingguy | 1153 | 2468 | `over_voltage_delta=72000`, `arm_freq=3200`, `gpu_freq=1000` | [result](https://browser.geekbench.com/v6/cpu/9204206) |
 | 2024-09-15 | martinrowan | 1132 | 2281 | `over_voltage_delta=73000`, `arm_freq=3400`, `gpu_freq=1150` | [result](https://browser.geekbench.com/v6/cpu/7307638) |
 | 2024-07-25 | geerlingguy | 1121 | 2219 | `over_voltage_delta=70000`, `arm_freq=3400`, `gpu_freq=1100` | [result](https://browser.geekbench.com/v6/cpu/7058700) |
 
