@@ -76,7 +76,8 @@ echo performance | sudo tee /sys/devices/system/cpu/cpu*/cpufreq/scaling_governo
 
 ## Tips / Debugging
 
-  - Check core voltage: `vcgencmd measure_volts core`
+  - Check core voltage requested by the SoC: `vcgencmd measure_volts core`
+  - Check core voltage delivered by the PMIC: `vcgencmd pmic_read_adc VDD_CORE_V`
   - Check core frequency: `vcgencmd measure_clock arm`
   - Check CPU temp: `vcgencmd measure_temp`
   - Check max frequency: `/sys/devices/system/cpu/cpu*/cpufreq/scaling_max_freq`
