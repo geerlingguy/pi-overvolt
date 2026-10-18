@@ -10,7 +10,8 @@ uptime=$(uptime)
 
 printf "Clock: ${current_clock#*=}\n"
 if [ -n "$pmic_voltage" ]; then
-  printf "Volts (PMIC VDD_CORE): ${pmic_voltage#*=}\n"
+  pmic_value=${pmic_voltage#*=}
+  printf "Volts (PMIC VDD_CORE): %.4fV\n" "${pmic_value%V}"
   printf "Volts (SoC requested): ${requested_voltage#*=}\n"
 else
   printf "Volts: ${requested_voltage#*=}\n"
